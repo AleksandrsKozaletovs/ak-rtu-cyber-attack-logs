@@ -1,0 +1,91 @@
+services:
+    nginx:
+        image: nginx_base:v1
+        container_name: nginx
+        volumes:
+            - nginx-conf:/etc/nginx/
+        ports:
+            - '80:80'
+        networks:
+            - nginx-proxy-net
+            - lab1-net
+            - lab2-net
+            - lab3-net
+            - lab4-net
+        stdin_open: true   # equivalent to -i
+        tty: true          # equivalent to -t
+        restart: unless-stopped
+    lab1:
+        image: tx6244/metasploitable2:latest
+        container_name: metasploitable2
+        command: sh -c "/bin/services.sh && bash"
+        depends_on:
+            - nginx
+        ports:
+            - '8081:80'
+        networks:
+            - lab1-net
+        stdin_open: true   # equivalent to -i
+        tty: true          # equivalent to -t
+        restart: unless-stopped
+    lab2:
+        image: sagikazarmark/dvwa:latest
+        container_name: dvwa
+        depends_on:
+            - nginx
+        ports:
+            - '8082:80'
+        networks:
+            - lab2-net
+        stdin_open: true   # equivalent to -i
+        tty: true          # equivalent to -t
+        restart: unless-stopped
+    lab3:
+        image: bkimminich/juice-shop:latest
+        container_name: juice-shop
+        depends_on:
+            - nginx
+        ports:
+            - '8083:3000'
+        networks:
+            - lab3-net
+        stdin_open: true   # equivalent to -i
+        tty: true          # equivalent to -t
+        restart: unless-stopped
+    lab4:
+        image: raesene/bwapp:latest
+        container_name: bwapp
+        depends_on:
+            - nginx
+        ports:
+            - '8084:80'
+        networks:
+            - lab4-net
+        stdin_open: true   # equivalent to -i
+        tty: true          # equivalent to -t
+        restart: unless-stopped
+        
+networks:
+    nginx-proxy-net: 
+        external: true  
+        name: nginx-proxy-net
+    lab1-net: 
+        external: true  
+        name: lab1-net
+    lab2-net: 
+        external: true  
+        name: lab2-net
+    lab3-net: 
+        external: true  
+        name: lab3-net
+    lab4-net: 
+        external: true  
+        name: lab4-net
+        
+volumes:
+  nginx-conf:
+    driver: local
+    driver_opts:
+      type: none
+      device: /opt/files/nginx-proxy/nginx/
+      o: bind
