@@ -1,2 +1,1 @@
-# ak-rtu-cyber-attack-logs
-Vieta, kura glabajas visi rezultāti no eksperimentiem, kas tiek veiktas BD "IT INFRASTRUKTŪRAS DROŠĪBAS PĀRVALDĪBAS SISTĒMAS IEVIEŠANA UZŅĒMUMĀ"
+Bakalaura darba “IT infrastruktūras drošības pārvaldības sistēmas ieviešana uzņēmumā” pielikumu krātuve
