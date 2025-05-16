@@ -1,5 +1,5 @@
 **ping komandas rezultāts**
-=====================
+
 PING metasploitable.lab.rtu.lv (192.168.1.200) 56(84) bytes of data.
 64 bytes from metasploitable.lab.rtu.lv (192.168.1.200): icmp_seq=1 ttl=64 time=3.57 ms
 64 bytes from metasploitable.lab.rtu.lv (192.168.1.200): icmp_seq=2 ttl=64 time=3.97 ms
@@ -8,10 +8,10 @@ PING metasploitable.lab.rtu.lv (192.168.1.200) 56(84) bytes of data.
 --- metasploitable.lab.rtu.lv ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3005ms
 rtt min/avg/max/mdev = 3.570/6.206/12.111/3.459 ms
-======================
+
 
 **dig komandas rezultāts**
-======================
+
 ; <<>> DiG 9.20.8-6-Debian <<>> metasploitable.lab.rtu.lv
 ;; global options: +cmd
 ;; Got answer:
@@ -30,10 +30,10 @@ metasploitable.lab.rtu.lv. 0    IN      A       192.168.1.200
 ;; SERVER: ::1#53(::1) (UDP)
 ;; WHEN: Wed May 14 20:16:19 EEST 2025
 ;; MSG SIZE  rcvd: 70
-======================
+
 
 **arp-scan komandas rezultāts**
-======================
+
 Interface: eth0, type: EN10MB, MAC: 00:0c:29:49:85:02, IPv4: 192.168.1.175
 WARNING: Cannot open MAC/Vendor file ieee-oui.txt: Permission denied
 WARNING: Cannot open MAC/Vendor file mac-vendor.txt: Permission denied
@@ -51,4 +51,4 @@ Starting arp-scan 1.10.0 with 256 hosts (https://github.com/royhills/arp-scan)
 
 10 packets received by filter, 0 packets dropped by kernel
 Ending arp-scan 1.10.0: 256 hosts scanned in 1.839 seconds (139.21 hosts/sec). 10 responded
-======================
+
