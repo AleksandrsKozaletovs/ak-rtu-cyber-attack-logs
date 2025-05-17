@@ -1,0 +1,2 @@
+**Zenmap lietojumprogrammas rezultāts**
+=======================================
