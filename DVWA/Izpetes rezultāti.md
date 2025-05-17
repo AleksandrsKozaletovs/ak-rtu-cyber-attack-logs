@@ -6,7 +6,6 @@ PING dvwa.lab.rtu.lv (192.168.1.200) 56(84) bytes of data.
 64 bytes from dvwa.lab.rtu.lv (192.168.1.200): icmp_seq=2 ttl=64 time=0.839 ms
 64 bytes from dvwa.lab.rtu.lv (192.168.1.200): icmp_seq=3 ttl=64 time=0.514 ms
 64 bytes from dvwa.lab.rtu.lv (192.168.1.200): icmp_seq=4 ttl=64 time=0.468 ms
-
 --- dvwa.lab.rtu.lv ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3033ms
 rtt min/avg/max/mdev = 0.468/0.774/1.277/0.323 ms
