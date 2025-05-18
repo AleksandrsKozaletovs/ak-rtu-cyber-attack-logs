@@ -4,8 +4,4 @@ docker pull sagikazarmark/dvwa
 docker pull bkimminich/juice-shop
 docker pull raesene/bwapp
 
-docker network create -d bridge --subnet 10.0.0.0/24 --gateway 10.0.0.1 nginx-proxy-net
-docker network create -d bridge --subnet 10.0.1.0/24 --gateway 10.0.1.1 lab1-net
-docker network create -d bridge --subnet 10.0.2.0/24 --gateway 10.0.2.1 lab2-net
-docker network create -d bridge --subnet 10.0.3.0/24 --gateway 10.0.3.1 lab3-net
-docker network create -d bridge --subnet 10.0.4.0/24 --gateway 10.0.4.1 lab4-net
+docker network create -d macvlan   --subnet=192.168.1.0/24   --gateway=192.168.1.1   -o parent=ens33   macvlan_net
