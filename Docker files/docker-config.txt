@@ -4,4 +4,6 @@ docker pull sagikazarmark/dvwa
 docker pull bkimminich/juice-shop
 docker pull raesene/bwapp
 
+docker cp nginx-proxy:/etc/nginx/ /opt/files/nginx-proxy/
+
 docker network create -d macvlan   --subnet=192.168.1.0/24   --gateway=192.168.1.1   -o parent=ens33   macvlan_net
