@@ -1,5 +1,7 @@
 **Atklata uzbrukuma žurnalfails JSON formatā**
-\n laukā "network.data.decoded" ir izvadīts termināla saturs, kas tika veidots uzbrukuma procesā
+
+laukā "network.data.decoded" ir izvadīts termināla saturs, kas tika veidots uzbrukuma procesā
+
 ```json
 {
   "_index": ".ds-logs-suricata.alerts-so-2025.05.21-000011",
