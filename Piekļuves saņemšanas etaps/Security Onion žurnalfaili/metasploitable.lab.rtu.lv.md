@@ -1,5 +1,5 @@
 **Atklata uzbrukuma žurnalfails JSON formatā**
-```
+```json
 {
   "_index": ".ds-logs-suricata.alerts-so-2025.05.21-000011",
   "_id": "MahB-ZYBy3bp7Al2n_zn",
