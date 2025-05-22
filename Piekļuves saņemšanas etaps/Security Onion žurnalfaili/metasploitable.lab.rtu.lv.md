@@ -1,6 +1,6 @@
 **Atklata uzbrukuma žurnalfails JSON formatā**
 
-laukā "network.data.decoded" ir izvadīts termināla saturs, kas tika veidots uzbrukuma procesā
+laukā **"network.data.decoded"** ir izvadīts termināla saturs, kas tika veidots uzbrukuma procesā
 
 ```json
 {
