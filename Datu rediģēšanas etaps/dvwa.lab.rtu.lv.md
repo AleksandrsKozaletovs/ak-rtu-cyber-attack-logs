@@ -33,3 +33,25 @@ round-trip min/avg/max/stddev = 0.065/0.075/0.097/0.000 ms
 /var/cache/apache2/mod_cache_disk
 /var/www/html (visi faili html mapē)
 ```
+**Failu rediģēšanas rezultāts**
+
+```php
+        <!-- <img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/RandomStorm.png\" /> -->
+        </div > <!--<div id=\"content\">-->
+
+        <div id=\"footer\">
+
+        <p>" . dvwaExternalLinkUrlGet( 'http://www.dvwa.co.uk/', 'Damn Vulnerable Web Application (DVWA)' ) . "</p>
+
+        </div> <!--<div id=\"footer\"> -->
+
+        </div> <!--<div id=\"wrapper\"> -->
+
+        </body>
+
+</html>";
+
+?>
+Kiberdrosibas tests
+
+```
