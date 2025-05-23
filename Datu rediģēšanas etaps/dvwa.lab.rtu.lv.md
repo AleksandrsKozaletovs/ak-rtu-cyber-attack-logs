@@ -56,3 +56,45 @@ Kiberdrosibas tests
 
 ```
 ![image](https://github.com/user-attachments/assets/180f98aa-3aed-4deb-8b34-c64d9cdecda5)
+
+
+**Failu dzēšanas process**
+* Pirms komandu izpildīšanas (html mapēs saturs) *
+```
+root@6ead2f4de120:/var/cache/apache2/mod_cache_disk# ls -al /var/www/html
+total 180
+drwxrwxrwx 1 www-data www-data  4096 Mar 20  2017 .
+drwxr-xr-x 1 root     root      4096 Mar 20  2017 ..
+-rw-rw-r-- 1 www-data www-data   500 Jan  4  2017 .htaccess
+-rw-rw-r-- 1 www-data www-data  7296 Jan  4  2017 CHANGELOG.md
+-rw-rw-r-- 1 www-data www-data 33107 Jan  4  2017 COPYING.txt
+-rw-rw-r-- 1 www-data www-data  7805 Jan  4  2017 README.md
+-rw-rw-r-- 1 www-data www-data  3798 Jan  4  2017 about.php
+drwxrwxr-x 1 www-data www-data  4096 Mar 20  2017 config
+drwxrwxr-x 1 www-data www-data  4096 Jan  4  2017 docs
+drwxrwxr-x 1 www-data www-data  4096 Jan  4  2017 dvwa
+drwxrwxr-x 1 www-data www-data  4096 Mar 20  2017 external
+-rw-rw-r-- 1 www-data www-data  1406 Jan  4  2017 favicon.ico
+drwxrwxr-x 1 www-data www-data  4096 Mar 20  2017 hackable
+-rw-rw-r-- 1 www-data www-data   895 Jan  4  2017 ids_log.php
+-rw-rw-r-- 1 www-data www-data  4389 Jan  4  2017 index.php
+-rw-rw-r-- 1 www-data www-data  1869 Jan  4  2017 instructions.php
+-rw-rw-r-- 1 www-data www-data  4183 May 23 18:36 login.php
+-rw-rw-r-- 1 www-data www-data   414 Jan  4  2017 logout.php
+-rw-rw-r-- 1 www-data www-data   148 Jan  4  2017 php.ini
+-rw-rw-r-- 1 www-data www-data   199 Jan  4  2017 phpinfo.php
+-rw-rw-r-- 1 www-data www-data    26 Jan  4  2017 robots.txt
+-rw-rw-r-- 1 www-data www-data  4686 Jan  4  2017 security.php
+-rw-rw-r-- 1 www-data www-data  2551 Jan  4  2017 setup.php
+drwxrwxr-x 1 www-data www-data  4096 Jan  4  2017 vulnerabilities
+```
+* Pēc komandu izpildīšanas (html mapēs saturs) *
+
+```
+root@6ead2f4de120:/var/www/html# ls -al
+total 16
+drwxrwxrwx 1 www-data www-data 4096 May 23 18:48 .
+drwxr-xr-x 1 root     root     4096 Mar 20  2017 ..
+```
+
+![image](https://github.com/user-attachments/assets/6d0e577e-af1a-43ef-a9e3-024d5ff5cdef)
