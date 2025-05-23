@@ -1,4 +1,6 @@
 **Security Onion žurnalfaila saturs**
+*network.data.decoded laukā tiek izvadīts, ka notika GET pieprasījums
+
 ```json
 {
   "@timestamp": "2025-05-23T18:12:35.925Z",
