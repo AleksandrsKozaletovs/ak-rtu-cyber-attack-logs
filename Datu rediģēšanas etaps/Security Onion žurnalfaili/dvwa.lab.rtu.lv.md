@@ -1,5 +1,5 @@
 **Security Onion žurnalfaila saturs**
-*network.data.decoded laukā tiek izvadīts, ka notika GET pieprasījums
+**network.data.decoded laukā tiek izvadīts, ka notika GET pieprasījums
 
 ```json
 {
