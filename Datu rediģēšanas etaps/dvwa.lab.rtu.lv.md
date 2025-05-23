@@ -59,7 +59,7 @@ Kiberdrosibas tests
 
 
 **Failu dzēšanas process**
-* Pirms komandu izpildīšanas (html mapēs saturs) *
+* Pirms komandu izpildīšanas (html mapēs saturs) 
 ```
 root@6ead2f4de120:/var/cache/apache2/mod_cache_disk# ls -al /var/www/html
 total 180
@@ -88,7 +88,7 @@ drwxrwxr-x 1 www-data www-data  4096 Mar 20  2017 hackable
 -rw-rw-r-- 1 www-data www-data  2551 Jan  4  2017 setup.php
 drwxrwxr-x 1 www-data www-data  4096 Jan  4  2017 vulnerabilities
 ```
-* Pēc komandu izpildīšanas (html mapēs saturs) *
+* Pēc komandu izpildīšanas (html mapēs saturs) 
 
 ```
 root@6ead2f4de120:/var/www/html# ls -al
