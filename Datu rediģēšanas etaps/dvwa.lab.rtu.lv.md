@@ -1,4 +1,4 @@
-**Datu izgūšana no dvwa.lab.rtu.lv tīmekļa vietnes ar pingu komandu** 
+**Datu iegūšana no dvwa.lab.rtu.lv tīmekļa vietnes ar pingu komandu** 
 ```
 PING 192.168.1.12 (192.168.1.12): 56 data bytes
 64 bytes from 192.168.1.12: icmp_seq=0 ttl=64 time=0.051 ms
